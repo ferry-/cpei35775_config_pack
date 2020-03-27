@@ -1,4 +1,4 @@
-#! python3
+#! /usr/bin/python3
 
 import sys
 import zlib
@@ -124,8 +124,8 @@ def pack(dec, fout, quiet=False):
 
 def usage():
     print("Usage: python3 %s unpack <config_packed.bin> [config_raw.xml]" % sys.argv[0], file=sys.stderr)
-    print("       python3 %s pack <config_raw.xml> [config_packed.bin]", file=sys.stderr)
-    print("omitting the output file argument causes the output to be dumped to stdout", file=sys.stderr)
+    print("       python3 %s pack <config_raw.xml> [config_packed.bin]" % sys.argv[0], file=sys.stderr)
+    print("Omitting the output file argument causes the output to be dumped to stdout.", file=sys.stderr)
 
 def main():
     if len(sys.argv) not in (3, 4):
